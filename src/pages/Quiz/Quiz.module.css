@@ -1,0 +1,105 @@
+/* Header.css */
+.quiz {
+  color: black;
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+  justify-content: space-between;
+  padding: 8px 15px;
+  font-size: 0.9em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.logo {
+  /* border: 1px solid white; */
+  font-size: 1.2em;
+}
+.logo a {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+.links {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin-left: 5px;
+}
+.link span:not(:first-child) {
+  background-color: black;
+  padding: 4px 4px;
+  border-radius: 4px;
+}
+
+.container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  flex: 1;
+}
+.options ul {
+  padding: 10px;
+}
+.options li {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+.options li:hover {
+  background-color: beige;
+}
+.options input {
+  margin-right: 5px;
+}
+.options input:focus {
+  outline: none;
+}
+
+.options .chosenOption {
+  background-color: red;
+  color: white;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer button {
+  font-size: 1.1em;
+  border: none;
+  padding: 8px 8px;
+  cursor: pointer;
+  background-color: #415568;
+  color: white;
+}
+.footer button:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-color: #2c3e50;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .timeLeft {
+    display: none;
+  }
+}
